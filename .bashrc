@@ -10,7 +10,8 @@ alias ll="ls -la"
 alias l="ls -Glah"
 
 # prompt
-source ~/.git-prompt.sh
+source ~/.git-prompt.sh;
+GIT_PS1_SHOWDIRTYSTATE=true;
 
 PS1='\n$(tput setaf 198)\u ';   # user
 PS1+='$(tput sgr0)on ';
