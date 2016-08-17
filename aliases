@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+alias ..="cd ..";
+alias ...="cd ../..";
+alias ....="cd ../../..";
+alias ll="ls -la"
+alias l="ls -Glah"

@@ -1,14 +1,6 @@
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
-
-# aliases
-alias ..="cd ..";
-alias ...="cd ../..";
-alias ....="cd ../../..";
-alias ll="ls -la"
-alias l="ls -Glah"
-
 # prompt
 source ~/.git-prompt.sh;
 GIT_PS1_SHOWDIRTYSTATE="true";
