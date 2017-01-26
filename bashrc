@@ -2,14 +2,14 @@
 set completion-ignore-case on
 
 # prompt
-source ~/.git-prompt.sh;
-GIT_PS1_SHOWDIRTYSTATE="true";
+# source ~/.git-prompt.sh;
+# GIT_PS1_SHOWDIRTYSTATE="true";
 
 PS1='\n$(tput setaf 198)\u ';   # user
 PS1+='$(tput sgr0)on ';
 PS1+='$(tput setaf 226)\h ';  # host
 PS1+='$(tput sgr0)in ';
 PS1+='$(tput setaf 87)\w ';  # cwd
-PS1+='$(tput sgr0)$(__git_ps1 "[%s]") ';  # cwd
+# PS1+='$(tput sgr0)$(__git_ps1 "[%s]") ';  # cwd
 PS1+='$(tput sgr0)\n> ';  # cwd
 export PS1;
