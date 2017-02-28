@@ -6,6 +6,5 @@ set completion-ignore-case on
 # git
 source ~/.git-completion.bash
 
-# https://github.com/michaeldfallen/git-radar#configuration-values
 export PS1="\n\w \$(git-radar --bash --fetch) \n$ ";
 export GIT_RADAR_COLOR="\\033[0;37m"
