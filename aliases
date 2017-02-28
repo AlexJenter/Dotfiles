@@ -10,6 +10,8 @@ alias dt="cd ~/Desktop"
 alias db="cd ~/Dropbox"
 alias gd="cd Google\ Drive/"
 
+alias gs="git status -s"
+
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 

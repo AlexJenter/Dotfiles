@@ -1,15 +1,11 @@
+export PATH="$PATH:`yarn global bin`";
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
-# prompt
-# source ~/.git-prompt.sh;
-# GIT_PS1_SHOWDIRTYSTATE="true";
+# git
+source ~/.git-completion.bash
 
-PS1='\n$(tput setaf 198)\u ';   # user
-PS1+='$(tput sgr0)on ';
-PS1+='$(tput setaf 226)\h ';  # host
-PS1+='$(tput sgr0)in ';
-PS1+='$(tput setaf 87)\w ';  # cwd
-# PS1+='$(tput sgr0)$(__git_ps1 "[%s]") ';  # cwd
-PS1+='$(tput sgr0)\n> ';  # cwd
-export PS1;
+# https://github.com/michaeldfallen/git-radar#configuration-values
+export PS1="\n\w \$(git-radar --bash --fetch) \n$ ";
+export GIT_RADAR_COLOR="\\033[0;37m"
