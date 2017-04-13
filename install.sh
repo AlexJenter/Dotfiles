@@ -25,6 +25,8 @@ brew cask install adobe-indesign-cc
 brew cask install adobe-photoshop-cc
 brew cask install adobe-photoshop-cc
 brew cask install adobe-media-encoder-cc
+brew cask install adobe-premiere-pro-cc
+brew cask install adobe-after-effects-cc
 
 # ATTRIBUTE / AMAZEEIO
 brew cask install harvest
