@@ -1,6 +1,6 @@
+#!/usr/bin/env bash
 
 # Make Tab autocomplete regardless of filename case
-set completion-ignore-case on
 
 # git
 source ~/.git-completion.bash
