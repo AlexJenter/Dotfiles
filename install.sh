@@ -1,8 +1,11 @@
+#!/usr/bin/env bash
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install git
 brew install node
 brew install tree
+brew install rename
 
 brew tap caskroom/cask
 brew cask install 1password
