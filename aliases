@@ -10,11 +10,11 @@ alias dt="cd ~/Desktop"
 alias db="cd ~/Dropbox"
 alias gd="cd Google\ Drive/"
 
-alias gs="git status -s"
-alias ga="git add"
-alias gaa="git add ."
-alias gcm="git commit -m"
-alias gpo="git push origin"
+# alias gs="git status -s"
+# alias ga="git add"
+# alias gaa="git add ."
+# alias gcm="git commit -m"
+# alias gpo="git push origin"
 
 alias dc-env="eval $(cachalot env)"
 alias dc="docker-compose"
@@ -36,3 +36,5 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+alias emsdk='source "$HOME/emsdk/emsdk_env.sh"'

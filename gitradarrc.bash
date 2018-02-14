@@ -13,4 +13,4 @@
 # export GIT_RADAR_COLOR_BRANCH=$branch
 # export GIT_RADAR_COLOR_LOCAL_AHEAD=$green
 # export GIT_RADAR_COLOR_CHANGES_UNSTAGED=$red
-export GIT_RADAR_FORMAT="  [%{remote}%{branch}%{ :local}]%{ :changes}%{ :stash}"
+export GIT_RADAR_FORMAT=" [%{remote}%{branch}%{ :local}]%{ :changes}%{ :stash}"
