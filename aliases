@@ -38,3 +38,6 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 alias emsdk='source "$HOME/emsdk/emsdk_env.sh"'
+
+
+alias ia="open $1 -a /Applications/iA\ Writer.app"
