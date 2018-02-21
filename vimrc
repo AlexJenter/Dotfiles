@@ -24,6 +24,7 @@ set statusline+=\ ℓ%l\ 𝚌%c
 set statusline+=\ 
 
 set number
+set cursorline
 syntax on
 
 highlight Comment cterm=italic
@@ -37,4 +38,4 @@ set wildmenu
 set wildmode=full,full
 set completeopt=menuone,preview
 
-au FileType gitcommit execute "normal! O" | startinsert
+au FileType gitcommit execute "normal! i" | startinsert

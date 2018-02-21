@@ -3,7 +3,7 @@
 # git
 source ~/.git-completion.bash
 
-export PS1="\n\w \$(git-radar --bash --fetch) \n$ ";
+export PS1="\n`tput sitm`\w`tput ritm` \$(git-radar --bash --fetch) \n$ ";
 export GIT_RADAR_COLOR="\\033[0;37m"
 
 
