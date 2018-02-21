@@ -1,15 +1,12 @@
 #!/usr/bin/env bash
 
-export PATH="/usr/local/mysql/bin:$PATH";
-export PATH="/usr/local/php5/bin:$PATH";
-export PATH="/usr/local/sbin:$PATH";
-export PATH="/usr/local/bin:$PATH";
-export PATH="/usr/local/bin/cmake:$PATH";
-export PATH="~/bin/attribute-scripts:$PATH";
-export PATH="$HOME/.yarn/bin:$PATH";
-export PATH="$HOME/bin/imgcat:$PATH";
-
-
+export PATH="$PATH:/usr/local/mysql/bin";
+export PATH="$PATH:/usr/local/php5/bin";
+export PATH="$PATH:/usr/local/sbin";
+export PATH="$PATH:/usr/local/bin";
+export PATH="$PATH:/usr/local/bin/cmake";
+export PATH="$PATH:$HOME/bin/attribute-scripts";
+export PATH="$PATH:$HOME/.yarn/bin";
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 

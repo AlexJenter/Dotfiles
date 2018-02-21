@@ -12,7 +12,7 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
-"" STATUSLINE
+""" Statusline
 set laststatus=2
 set statusline=
 set statusline+=%{StatuslineGit()}
@@ -26,10 +26,15 @@ set statusline+=\
 set number
 syntax on
 
-""" SHOW INVISIBLE CHARACTERS
+highlight Comment cterm=italic
+highlight StatusLine ctermbg=1 ctermfg=0 cterm=Bold
+
+""" Show invisible characters
 set listchars=space:⋅,eol:¬,tab:\|⋅,trail:⋅,extends:>,precedes:<
 set list
 
 set wildmenu
 set wildmode=full,full
 set completeopt=menuone,preview
+
+au FileType gitcommit execute "normal! O" | startinsert
