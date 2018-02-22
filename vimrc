@@ -28,7 +28,25 @@ set cursorline
 syntax on
 
 highlight Comment cterm=italic
-highlight StatusLine ctermbg=1 ctermfg=0 cterm=Bold
+" highlight StatusLine ctermbg=1 ctermfg=0 cterm=Bold
+
+
+function! InsertStatuslineColor(mode)
+  if a:mode == 'i'
+    highlight StatusLine ctermbg=1 ctermfg=0 cterm=Bold
+  elseif a:mode == 'r'
+    highlight StatusLine ctermbg=0 ctermfg=0 cterm=Bold
+  else
+    highlight StatusLine ctermfg=8 ctermbg=18
+  endif
+endfunction
+
+au InsertEnter * call InsertStatuslineColor(v:insertmode)
+:au InsertChange * call InsertStatuslineColor(v:insertmode)
+au InsertLeave * highlight StatusLine ctermfg=8 ctermbg=18
+
+" default the statusline to green when entering Vim
+highlight StatusLine ctermfg=8 ctermbg=18
 
 """ Show invisible characters
 set listchars=space:⋅,eol:¬,tab:\|⋅,trail:⋅,extends:>,precedes:<
