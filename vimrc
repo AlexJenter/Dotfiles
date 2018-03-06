@@ -1,4 +1,4 @@
-"{{{ Functions
+"Error detected while processing function UltiSnips#TrackChange:{{{ Functions
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
@@ -18,15 +18,14 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'wincent/command-t'
-Plugin 'ervandew/supertab'
-Plugin 'Valloric/YouCompleteMe'
-" Plugin '1995eaton/vim-better-javascript-completion'
-" Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'kien/ctrlp.vim'
+Plugin 'othree/html5.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'isruslan/vim-es6'
 Plugin 'marijnh/tern_for_vim'
-Plugin 'sirver/ultisnips'
+Plugin 'valloric/youcompleteme'
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
 call vundle#end()            " required
 filetype plugin indent on
 "}}}
@@ -58,16 +57,30 @@ au InsertLeave * highlight StatusLine ctermfg=8 ctermbg=18
 highlight StatusLine ctermfg=8 ctermbg=18
 "}}}
 "{{{ Show invisible characters
-set listchars=space:⋅,eol:¬,tab:\|⋅,trail:⋅,extends:>,precedes:<
+set listchars=tab:│\ ,trail:⋅
 set list
 "}}}
 "{{{ Mappings
-let mapleader = " "
+let mapleader = ","
 nnoremap <Leader>t :CommandT<CR>
 nnoremap <Leader>b :CommandTBuffer<CR>
 inoremap <Leader><Leader> <Esc>
 vnoremap <Leader><Leader> <Esc>
+nnoremap <silent><tab> >>
+nnoremap <silent><S-tab> >>
+nnoremap <Leader>p :CtrlP<CR>
+nnoremap <Leader><tab> :bNext<CR>
+nnoremap <Leader>av :edit ~/bin/Dotfiles/vimrc<CR>
+nnoremap <Leader>sv :source ~/.vimrc<CR>
 "}}}
+"{{{Deoplete
+" call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
+" call deoplete#enable()
+
+" let g:deoplete#sources={}
+" let g:deoplete#sources._=['buffer', 'file', 'ultisnips']
+"}}}
+
 syntax on
 filetype plugin indent on
 highlight Comment cterm=italic
@@ -81,3 +94,9 @@ set clipboard=unnamed
 set wildignore+=node_modules
 set backupcopy=yes
 set expandtab tabstop=2 shiftwidth=2
+set fillchars+=vert:│
+highlight VertSplit ctermbg=bg
+set mouse=a
+set splitbelow
+
+autocmd FileType javascript setlocal omnifunc=tern#Complete

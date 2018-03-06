@@ -41,3 +41,4 @@ alias emsdk='source "$HOME/emsdk/emsdk_env.sh"'
 
 
 alias ia="open $1 -a /Applications/iA\ Writer.app"
+
