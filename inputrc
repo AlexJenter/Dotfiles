@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-set completion-ignore-case on
-set show-all-if-ambiguous on
-set skip-completed-text on
-TAB:menu-complete
-
-"\e[B": history-search-forward
-"\e[A": history-search-backward

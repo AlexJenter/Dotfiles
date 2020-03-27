@@ -1,0 +1,35 @@
+prompt_order=[
+    "directory",
+    "git_branch",
+    "git_status",
+    "line_break",
+    "character"
+]
+
+[directory]
+truncate_to_repo = false
+style = "bold black"
+
+[git_branch]
+style = "bold black"
+
+[git_status]
+ahead = "↑"
+behind = "↓"
+modified = "~"
+modified_count.enabled = true
+deleted = "∅"
+deleted_count.enabled = true
+untracked = "*"
+untracked_count.enabled = true
+staged.value = "+"
+staged_count.enabled = true
+style = "fg:#ff0066"
+prefix = "<"
+suffix = ">"
+
+
+[character]
+symbol = "->"
+style_success = "bold black"
+style_failure = "bold red"
