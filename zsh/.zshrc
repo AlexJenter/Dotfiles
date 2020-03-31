@@ -1,4 +1,5 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 eval "$(starship init zsh)"
 
@@ -11,3 +12,4 @@ source $ZSH/oh-my-zsh.sh
 
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+

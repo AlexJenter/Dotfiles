@@ -2,6 +2,7 @@ prompt_order=[
     "directory",
     "git_branch",
     "git_status",
+    "nodejs",
     "line_break",
     "character"
 ]
@@ -26,8 +27,12 @@ staged.value = "+"
 staged_count.enabled = true
 style = "fg:#ff0066"
 prefix = "<"
-suffix = ">"
+suffix = "> "
 
+
+[nodejs]
+symbol = "⬢ "
+style = "bold black"
 
 [character]
 symbol = "->"
